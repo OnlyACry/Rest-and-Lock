@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Rest & Lock</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>休息定时器</h2>
+      <label>工作时长（分钟）
+        <input id="interval" type="number" min="1">
+      </label>
+      <label>休息时长（分钟）
+        <input id="duration" type="number" min="1">
+      </label>
+      <div class="row">
+        <button id="save">保存并重置</button>
+        <button id="toggle">暂停</button>
+      </div>
+      <div id="status"></div>
+      <div id="next"></div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Rest & Lock (定时休息锁定)",
+  "description": "在设定的休息时间锁定浏览器标签页，休息结束后恢复下一轮计时。",
+  "version": "0.1.0",
+  "permissions": [
+    "storage",
+    "tabs",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Rest & Lock"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
